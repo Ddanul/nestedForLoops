@@ -52,14 +52,14 @@ const grandTotal = (hours, stores) => {
 // ------------------------------------------------------------------------------------------------
 
 const salesData = (data) => {
-  // const grandTotal = grandTotal(hours, stores);
-  // const answer = [];
-  // for(let i=0; i<hoursOpen.length; i++){
-  //   let newObj = {};
-  //   for(let j=0; i<cookieStores.length; j++){
-  //     newObj.sales = `${`
-  //   }
-  // }
+  const answer = [];
+  data.forEach(function(num, i) {
+    const newObj = {};
+    newObj.sales = `${num} cookies`;
+    newObj.time = hoursOpen[i];
+    answer.push(newObj);
+  });
+  return answer;
 };
 
 // ------------------------------------------------------------------------------------------------
