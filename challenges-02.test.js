@@ -75,7 +75,15 @@ const salesData = (data) => {
 // ------------------------------------------------------------------------------------------------
 
 const giveValentines = (list) => {
-  // Solution code here...
+  const answer = [];
+  for(let i = 0; i < list.length; i++){
+    for(let j = 0; j < list.length; j++){
+      if(i!==j){
+        answer.push(`${list[i]} gives a Valentine to ${list[j]}.`);
+      }else{continue};
+    }
+  }
+  return answer;
 };
 
 // ------------------------------------------------------------------------------------------------
